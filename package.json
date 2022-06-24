@@ -1,0 +1,26 @@
+{
+  "name": "intergalacticbankingclan2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristineWidden/InterGalacticBankingClan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristineWidden/InterGalacticBankingClan/issues"
+  },
+  "homepage": "https://github.com/ChristineWidden/InterGalacticBankingClan#readme",
+  "dependencies": {
+    "discord.js": "^13.8.0",
+    "node-json-db": "^1.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0"
+  }
+}

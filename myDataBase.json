@@ -1,0 +1,70 @@
+{
+    "info": {
+        "currentId": 8,
+        "nameIds": {
+            "rynix": {
+                "id": "2"
+            },
+            "frederick": {
+                "id": "6"
+            },
+            "ashe": {
+                "id": "7"
+            }
+        }
+    },
+    "userInfo": {
+        "358319695100903426": {
+            "accounts": [
+                "7"
+            ],
+            "defaultAccount": "ashe"
+        },
+        "138144346166788096": {
+            "accounts": [
+                "2"
+            ]
+        },
+        "321546154460446720": {
+            "accounts": [
+                "6"
+            ],
+            "defaultAccount": "frederick"
+        }
+    },
+    "accounts": {
+        "2": {
+            "type": "user",
+            "owner": "138144346166788096",
+            "name": "rynix",
+            "funds": 0,
+            "decimals": true,
+            "currency": {
+                "symbol": "$",
+                "position": "before"
+            }
+        },
+        "6": {
+            "type": "user",
+            "owner": "321546154460446720",
+            "name": "frederick",
+            "funds": 864,
+            "decimals": true,
+            "currency": {
+                "symbol": "$",
+                "position": "before"
+            }
+        },
+        "7": {
+            "type": "user",
+            "owner": "358319695100903426",
+            "name": "ashe",
+            "funds": 102,
+            "decimals": false,
+            "currency": {
+                "symbol": " credits",
+                "position": "right"
+            }
+        }
+    }
+}
