@@ -1,6 +1,6 @@
 {
     "info": {
-        "currentId": 8,
+        "currentId": 9,
         "nameIds": {
             "rynix": {
                 "id": "2"
@@ -10,6 +10,9 @@
             },
             "ashe": {
                 "id": "7"
+            },
+            "dorian": {
+                "id": "8"
             }
         }
     },
@@ -23,13 +26,20 @@
         "138144346166788096": {
             "accounts": [
                 "2"
-            ]
+            ],
+            "defaultAccount": "rynix"
         },
         "321546154460446720": {
             "accounts": [
                 "6"
             ],
             "defaultAccount": "frederick"
+        },
+        "400405016470355989": {
+            "accounts": [
+                "8"
+            ],
+            "defaultAccount": "dorian"
         }
     },
     "accounts": {
@@ -37,7 +47,7 @@
             "type": "user",
             "owner": "138144346166788096",
             "name": "rynix",
-            "funds": 0,
+            "funds": 2631,
             "decimals": true,
             "currency": {
                 "symbol": "$",
@@ -48,21 +58,32 @@
             "type": "user",
             "owner": "321546154460446720",
             "name": "frederick",
-            "funds": 864,
-            "decimals": true,
+            "funds": 274,
+            "decimals": false,
             "currency": {
-                "symbol": "$",
-                "position": "before"
+                "symbol": " credits",
+                "position": "right"
             }
         },
         "7": {
             "type": "user",
             "owner": "358319695100903426",
             "name": "ashe",
-            "funds": 102,
+            "funds": 6572,
             "decimals": false,
             "currency": {
                 "symbol": " credits",
+                "position": "right"
+            }
+        },
+        "8": {
+            "type": "user",
+            "owner": "400405016470355989",
+            "name": "dorian",
+            "funds": 30,
+            "decimals": false,
+            "currency": {
+                "symbol": "",
                 "position": "right"
             }
         }
