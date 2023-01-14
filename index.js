@@ -5,9 +5,9 @@ const { Config } = require ('node-json-db/dist/lib/JsonDBConfig');
 
 // Require the necessary discord.js classes
 const { Client, Intents } = require('discord.js');
-//const { token, commandSymbol } = require('./config.json');
-const token = process.env.token
-const commandSymbol = process.env.commandSymbol
+const { token, commandSymbol } = require('./config.json');
+//const token = process.env.token
+//const commandSymbol = process.env.commandSymbol
 
 // Create a new client instance
 const client = new Client({ allowedMentions: {parse: []}, intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.DIRECT_MESSAGES] });

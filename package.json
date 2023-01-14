@@ -19,7 +19,7 @@
   "homepage": "https://github.com/ChristineWidden/InterGalacticBankingClan#readme",
   "dependencies": {
     "discord.js": "^13.8.0",
-    "node-json-db": "^1.5.0"
+    "node-json-db": "^2.1.3"
   },
   "devDependencies": {
     "eslint": "^8.17.0"
