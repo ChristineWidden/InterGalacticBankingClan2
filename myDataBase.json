@@ -1,10 +1,6 @@
 {
     "info": {
-<<<<<<< HEAD
-        "currentId": "[object Object]1",
-=======
-        "currentId": 9,
->>>>>>> 97b233498c76be79113b1549b067add453c218c5
+        "currentId": "10",
         "nameIds": {
             "rynix": {
                 "id": "2"
@@ -17,12 +13,9 @@
             },
             "dorian": {
                 "id": "8"
-<<<<<<< HEAD
             },
             "fred": {
-                "id": "[object Object]"
-=======
->>>>>>> 97b233498c76be79113b1549b067add453c218c5
+                "id": "9"
             }
         }
     },
@@ -42,7 +35,7 @@
         "321546154460446720": {
             "accounts": [
                 "6",
-                "[object Object]"
+                "9"
             ],
             "defaultAccount": "frederick"
         },
@@ -69,11 +62,7 @@
             "type": "user",
             "owner": "321546154460446720",
             "name": "frederick",
-<<<<<<< HEAD
             "funds": 1304,
-=======
-            "funds": 274,
->>>>>>> 97b233498c76be79113b1549b067add453c218c5
             "decimals": false,
             "currency": {
                 "symbol": " credits",
@@ -101,9 +90,8 @@
                 "symbol": "",
                 "position": "right"
             }
-<<<<<<< HEAD
         },
-        "[object Object]": {
+        "9": {
             "type": "user",
             "owner": "321546154460446720",
             "name": "fred",
@@ -113,8 +101,6 @@
                 "symbol": "$",
                 "position": "before"
             }
-=======
->>>>>>> 97b233498c76be79113b1549b067add453c218c5
         }
     }
 }
