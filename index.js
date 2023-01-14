@@ -10,7 +10,7 @@ const { token, commandSymbol } = require('./config.json');
 //const commandSymbol = process.env.commandSymbol
 
 // Create a new client instance
-const client = new Client({ allowedMentions: {parse: []}, intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.DIRECT_MESSAGES] });
+const client = new Client({ allowedMentions: {parse: []}, intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.DIRECT_MESSAGES, Intents.FLAGS.MESSAGE_CONTENT] });
 const db = new JsonDB(new Config("myDataBase", true, true, '/'));
 let currentId = 0
 try {
@@ -32,6 +32,7 @@ client.once('ready', () => {
 });
 
 client.on('messageCreate', message => {
+    console.log("Message!");
     console.log(message.content);
     const content = message.content.toLowerCase();
     const userId = message.author.id;
@@ -64,6 +65,11 @@ client.on('messageCreate', message => {
                     break;
                 case "delete":
                     Commands.myDelete(db, userId, splitMessage.splice(1));
+                    break;
+                case "h":
+                case "help":
+                    Commands.help(db, userId, splitMessage.splice(1));
+                    break;
             }
         } catch (e) {
             message.reply({content: e.message})

@@ -18,8 +18,13 @@
   },
   "homepage": "https://github.com/ChristineWidden/InterGalacticBankingClan#readme",
   "dependencies": {
+<<<<<<< HEAD
     "discord.js": "^13.8.0",
     "node-json-db": "^2.1.3"
+=======
+    "discord.js": "^13.11.0",
+    "node-json-db": "^1.5.0"
+>>>>>>> 97b233498c76be79113b1549b067add453c218c5
   },
   "devDependencies": {
     "eslint": "^8.17.0"

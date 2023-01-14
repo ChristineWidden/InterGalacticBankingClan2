@@ -164,7 +164,7 @@ function myDefault(db, userId, params) {
 }
 
 function account(db, userId, params) {
-    let usage = "Usage: account [account_name] [-s symbol] [-p symbol_pos] [-d decimals] [-a user] [-r user] [-afr allow_fund_removal]\n" +
+    let usage = "Usage: account/a [account_name] [-s symbol] [-p symbol_pos] [-d decimals] [-a user] [-r user] [-afr allow_fund_removal]\n" +
         "\tsymbol: a character or string to represent the currency\n" +
         "\tsymbol_pos: left or right\n" +
         "\tdecimals: represented with decimals, true or false\n" +
@@ -361,6 +361,16 @@ function myDelete(db, userId, params) {
     endMessage(account.name + " has been deleted")
 }
 
+function help(db, userId, params) {
+    endMessage("Commands: \n```bash\n" +
+        "$create/c [group/g] account_name group_member1 [group_member2 ...]\n" +
+        "$withdraw/w amount [account_name]\n" +
+        "$default account_name\n" +
+        "$account/a [account_name] [-s symbol] [-p symbol_pos] [-d decimals] [-a user] [-r user] [-afr allow_fund_removal]\n" +
+        "$transfer/t amount source_account destination_account\n" +
+        "$delete account_name account_name```")
+}
+
 function checkName(name, db) {
     try {
         db.getData("/info/nameIds/" + name)
@@ -491,4 +501,4 @@ function onlyUnique(value, index, self) {
     return self.indexOf(value) === index;
 }
 
-module.exports = { create, myDefault, deposit, withdraw, account, transfer, myDelete};
+module.exports = { create, myDefault, deposit, withdraw, account, transfer, myDelete, help};
